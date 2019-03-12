@@ -1,0 +1,16 @@
+@import 'bootstrap';
+
+.viewer {
+    height: 100%;
+    // border-top: 2px solid $c-secondary;
+    // border-bottom: 2px solid $c-secondary;
+    overflow: hidden;
+}
+
+.content { height: 100%; }
+
+h1,h2 { color: #e0e0e0; }
+
+p { color: #888; }
+
+.uk-button-default { background-color: #eee !important; }

@@ -1,0 +1,14 @@
+@import 'bootstrap';
+
+h1 { color: $c-default; }
+
+h3 { color: $c-light; margin: 20px 0; }
+
+p { 
+    margin: 0;
+    color: #BDBDBD; 
+    &::first-letter { text-transform: capitalize; }
+}
+
+.icon { color: $c-secondary; margin: 0px; }
+

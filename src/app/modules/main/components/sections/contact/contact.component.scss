@@ -1,0 +1,47 @@
+@import 'bootstrap';
+
+h1 { color: #000; }
+
+h1 + p { @include font-size(20px); color: #131313; }
+
+a { color: #131313; }
+
+.uk-card {
+    background-color: #e4e4e4;
+    .uk-card-footer { border-top: 1px solid #ccc; }
+}
+   
+
+// .uk-input, textarea {
+//     -webkit-box-shadow: none;
+//     border-bottom: 2px;
+//     border-style: none none solid none;
+//     margin: 10px 0;
+//     border-color: #eee;
+//     background: none;
+//     text-align: center;
+//     color:#000;
+//     font-size: 16px !important;
+//     &:focus, &:active {
+// 		outline: none;
+//         border-bottom: 2px solid $c-secondary;
+//         background:none;
+//         color:#000;
+// 	}
+// }
+
+
+/* For Mobiles Devices */
+@media (max-width: devices(mobile)) {
+
+}
+
+/* For Tablets And Larger Screens Devices */
+@media (min-width: devices(tablet)) {
+
+    form {
+        width: 70%;
+        margin: 0 auto;
+    }
+    
+}

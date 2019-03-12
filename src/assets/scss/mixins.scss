@@ -1,0 +1,8 @@
+@import 'variables';
+@import 'functions';
+
+@mixin font-size($value) {
+    $base: get($fontSize, base);
+    font-size: $value !important;
+    font-size: ($value / $base) * 1rem !important;
+}

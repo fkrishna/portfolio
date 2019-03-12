@@ -1,0 +1,37 @@
+
+/* With Devices */
+$widthDevices: (
+    mobile: 640px,
+    tablet: 960px,
+    monitor: 1200px,
+);
+
+/* 
+Font-Size 
+Must set html { font-size: 62.5% !important; }
+*/
+$fontSize: (
+    base: 10px,
+    small: 14px,
+    default: 16px,
+    medium: 22px,
+    large: 28px,
+    xlarge: 34px
+);
+$fs-sm: map-get($fontSize, small);
+$fs-default: map-get($fontSize, default);
+$fs-med: map-get($fontSize, medium);
+$fs-lg: map-get($fontSize, large);
+$fs-xlg: map-get($fontSize, xlarge);
+
+/* Colors */
+$colors: (
+    primary: #131313,
+    secondary: #26A69A,
+    default: #FFFFFF, 
+    light: #EEEEEE,
+);
+$c-primary: map-get($colors, primary);
+$c-secondary: map-get($colors, secondary);
+$c-default: map-get($colors, default);
+$c-light: map-get($colors, light);

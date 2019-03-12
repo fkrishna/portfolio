@@ -1,0 +1,7 @@
+@function get($map, $key) {
+    @return map-get($map, $key);
+}
+
+@function devices($key) {
+    @return get($widthDevices, $key);
+}

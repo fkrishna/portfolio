@@ -1,0 +1,16 @@
+<div class="uk-section uk-section-large uk-background-primary">
+  <div class="uk-container">
+    <h1>services</h1>
+    <h3 class="uk-margin-medium">
+      I can help you build and grow your next product
+    </h3>
+    <div class="uk-grid-match uk-text-center uk-child-width-expand@m uk-margin-medium-top" uk-grid>
+      <div *ngFor="let myservice of services">
+        <span class="icon" [attr.uk-icon]="myservice.icon"></span>
+        <h3>{{ myservice.name }}</h3>
+        <p>{{ myservice.content }}</p>
+      </div>
+    </div>
+  </div>
+</div>
+

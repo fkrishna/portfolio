@@ -1,0 +1,31 @@
+@import 'bootstrap';
+
+*, *:before, *:after { box-sizing: border-box; }
+
+html { font-size: 62.5% !important; }
+
+html, body { height: 100% !important; }
+
+.uk-container { text-align: center; }
+
+textarea { resize: none; }
+
+p, div, a { font-family: 'Open Sans', sans-serif; }
+
+h1, h2 { padding: 0 !important; margin: 0 !important; }
+
+h1, h2, h3, input, textarea {  
+    font-family: 'Open Sans', sans-serif !important; 
+    text-transform: capitalize !important;
+}
+
+h1 { @include font-size($fs-xlg); font-weight: 600 !important; }
+h2 { @include font-size($fs-lg); }
+h3 { @include font-size($fs-med); }
+p  { @include font-size($fs-default); }
+
+.uk-background-primary { background-color: $c-primary !important; }
+.uk-background-default { background-color: $c-default !important; }
+.uk-background-secondary { background-color: $c-secondary !important; }
+.uk-background-muted { background-color: $c-light !important; }
+.uk-button { @include font-size($fs-sm); }

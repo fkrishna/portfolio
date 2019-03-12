@@ -1,0 +1,29 @@
+
+
+<div class="viewer uk-box-shadow-medium uk-background-primary">
+    <div class="content">
+        <div class="uk-flex uk-flex-middle uk-flex-center uk-flex-column" style="height:100%;">
+            <div class="uk-container uk-container-small">
+
+                <h2 *ngIf="!project">select a project</h2>
+
+                <div *ngIf="project">
+                    <h1>{{ project.name }}</h1>
+                    <p>{{ project.desc }}</p>
+                    <div>
+                        <a [href]="project.webUrl" 
+                        target="_blank" 
+                        class="uk-button uk-button-default" 
+                        *ngIf="project.webUrl">see project</a>
+
+                        <a [href]="project.codeUrl" 
+                        target="_blank" 
+                        class="uk-button uk-button-secondary">source code</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+

@@ -1,0 +1,8 @@
+<nav>
+    <ul class="uk-iconnav uk-box-shadow-small" scroll-spy>
+        <li *ngFor="let nav of navs; index as i;">
+            <a [href]="'#' + nav.name"
+            [attr.uk-icon]="'icon:'+ nav.icon + ';ratio:1.30'"></a>
+        </li>
+    </ul>
+</nav>

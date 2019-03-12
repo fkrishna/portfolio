@@ -1,0 +1,29 @@
+@import 'bootstrap';
+
+.overlay { background-color: #444; }
+
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column ;
+}
+
+h1 { font-weight: 800; @include font-size($fs-xlg * 2); margin:0; }
+
+.small {
+    @include font-size($fs-med);
+    font-weight: 600;
+    color: $c-secondary;
+}
+
+/* For Mobiles Devices */
+@media (max-width: 960px) {
+
+}
+
+/* For Tablets And Larger Screens Devices */
+@media (min-width: devices(mobile)) {
+    
+}
+

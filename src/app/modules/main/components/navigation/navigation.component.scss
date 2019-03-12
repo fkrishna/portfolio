@@ -1,0 +1,29 @@
+@import 'bootstrap';
+
+.uk-iconnav {
+    position: fixed;
+    z-index: 999;
+    background-color:#eee; 
+    a { color:#000; }
+    .active a { color: $c-secondary; }
+}
+
+/* for mobiles and tablets devices */
+@media (max-width: devices(tablet)) {
+    .uk-iconnav {
+        left:0; right:0; top:0;  
+        justify-content: center; 
+        li { padding: 0; margin: 20px 15px; }     
+    }
+}
+
+/* For larger screens  */
+@media (min-width: devices(tablet)) {
+    .uk-iconnav { 
+        border-radius: 0 15px 15px 0;
+        li { padding: 0; margin: 12px 20px; }
+        top: 35%; left: 0;     
+        flex-direction: column;
+        margin-left: 0;
+    }
+}
