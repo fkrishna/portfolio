@@ -1,6 +1,6 @@
 @import 'bootstrap';
 
-h1 { color: $c-secondary; }
+h1 { color: $c-secondary; @include font-size(40px); }
 
 .bio {  
     line-height: 2;
