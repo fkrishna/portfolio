@@ -1,0 +1,13 @@
+<div class="viewer uk-box-shadow-medium uk-background-primary">
+  <ng-template [ngIf]="!found" [ngIfElse]="projectView">
+    <div class="uk-flex uk-flex-middle uk-flex-center uk-flex-column" style="height:90%;">
+      <h2>Project Not Found</h2>
+    </div>
+  </ng-template>
+
+  <ng-template #projectView>
+    <div>
+      <iframe [src]="project.url|safe" (load)="onLoadIframe()" frameborder="0" style="height:100vh;"></iframe>
+    </div>
+  </ng-template>
+</div>

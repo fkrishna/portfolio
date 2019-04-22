@@ -3,9 +3,10 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from '@app/app-routing.module';
 import { AppComponent } from '@app/app.component';
+import { ModalDirective } from './shared/directives/modal.directive';
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent, ModalDirective],
   imports: [
     BrowserModule,
     AppRoutingModule

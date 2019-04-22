@@ -4,9 +4,17 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
+import { SafePipe } from './pipes/safe.pipe';
+import { ModalComponent } from './components/modal/modal.component';
 
 @NgModule({
-  declarations: [LogoComponent, NavbarComponent, FooterComponent],
+  declarations: [
+    LogoComponent,
+    NavbarComponent, 
+    FooterComponent,
+    SafePipe,
+    ModalComponent
+  ],
   imports: [
     CommonModule,
     RouterModule.forChild([])
@@ -14,7 +22,8 @@ import { CommonModule } from '@angular/common';
   exports: [
     LogoComponent,
     NavbarComponent,
-    FooterComponent
+    FooterComponent,
+    SafePipe
   ]
 })
 export class SharedModule { }

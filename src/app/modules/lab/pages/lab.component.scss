@@ -1,31 +1,8 @@
 @import 'bootstrap';
 
-footer {
-    // position: absolute;
-    // bottom: 0; left: 0; right: 0;
+.uk-navbar-container { 
+    background-color: #202124; 
+    box-shadow: 0 2px 4px rgba(0,0,0,.5);
 }
 
-.uk-card-footer {
-    display: flex;
-    justify-content: space-between;
-}
-
-
-header {
-
-    span{ @include font-size($fs-xlg + 5); color: $c-primary; font-weight: 300; }
-}
-
-/* For Mobiles Devices */
-@media (min-width: 640px) {
-    .uk-card-footer {
-        position: absolute;
-        bottom: 0; left: 0; right: 0;
-        
-    }
-}
-
-// /* For Tablets And Larger Screens Devices */
-// @media (min-width: devices(mobile)) {
-//     .panel { border: 1px solid blue; }
-// }
+.uk-logo { color: #f5f5f5; text-transform: uppercase; }

@@ -3,8 +3,8 @@ import { CommonModule } from '@angular/common';
 
 import { LabRoutingModule } from './lab-routing.module';
 import { LabComponent } from './pages/lab.component';
-import { ViewerComponent } from './components/viewer/viewer.component';
-import { SafePipe } from '@app/shared/pipes/safe.pipe';
+import { ProjectListComponent } from './pages/project-list/project-list.component';
+import { ProjectViewerComponent } from './pages/project-viewer/project-viewer.component';
 import { SharedModule } from '@app/shared/shared.module';
 
 
@@ -16,8 +16,8 @@ import { SharedModule } from '@app/shared/shared.module';
   ],
   declarations: [
     LabComponent,  
-    ViewerComponent,
-    SafePipe,
+    ProjectListComponent,
+    ProjectViewerComponent
   ]
 })
 export class LabModule { }
