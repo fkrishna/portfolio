@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AboutComponent implements OnInit {
 
-  private skills = [
+  skills = [
     { name: 'c language', src: 'assets/img/skills/c.png' },
     { name: 'python', src: 'assets/img/skills/python.png' },
     { name: 'PHP', src: 'assets/img/skills/php.png' },
@@ -26,14 +26,14 @@ export class AboutComponent implements OnInit {
     { name: 'codeigniter', src: 'assets/img/skills/codeigniter.png' }
   ];
 
-  private certificates = [
-    { 
-      desc: 'full stack web developer', 
+  certificates = [
+    {
+      desc: 'full stack web developer',
       logo: 'assets/img/udacity.png',
-      src: 'assets/files/certificates/udacity-fullstack-web-dev-certificate.pdf' 
+      src: 'assets/files/certificates/udacity-fullstack-web-dev-certificate.pdf'
     },
-    { 
-      desc: 'First Aid/CPR/AED', 
+    {
+      desc: 'First Aid/CPR/AED',
       logo: 'assets/img/redcross.png',
       src: 'assets/files/certificates/american-redcross-certificate.pdf'
     },
