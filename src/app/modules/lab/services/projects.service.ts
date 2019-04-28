@@ -5,7 +5,7 @@ import { Injectable } from '@angular/core';
 })
 export class ProjectsService {
 
-  private projects = [
+  public projects = [
     {
       name: 'todo list',
       url: 'assets/files/TodoList/index.html',
