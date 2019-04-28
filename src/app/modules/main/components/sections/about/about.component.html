@@ -4,21 +4,59 @@
       <h1>hi.</h1>
       <p class="uk-dropcap bio">
         I'm Krishna Farvil, I'm a self-taught software developer based in Boston MA.
-        I'm currently doing my bachelors degree at UMASS Boston.
+        I'm currently working on my associatw degree at Quincy College.
         I'm interested in all kinds of digital technologies,
         but my major focus is on software development. I love building applications software either web, mobile or
-        desktop from start to finish...
-        <!--I’m looking to collaborate on
-        interesting projects on site or remotely with awesome people, if you’re a small to medium sized business I’m
-        more than sure I can help. -->
+        desktop from start to finish. I’m looking to collaborate on
+        interesting projects on site or remotely with awesome people.
       </p>
     </article>
 
-    <div class="uk-margin-medium">
-      <a href="https://graduation.udacity.com/confirm/CR3E95HH" target="_blank"
-      uk-tooltip="title:FullStack Web Developer Certificate; pos:right">
-        <img src="assets/img/icons/certificate.png" width="50" alt="FullStack Web Developer Certificate">
-      </a>
+    <div class="uk-margin-large">
+      <div class="uk-grid-larg uk-child-width-1-3@s uk-flex-center uk-text-center" uk-grid>
+        <!-- <div>
+          <a href="assets/others/cv" target="_blank">
+            <img uk-tooltip="title:certifications;pos:top" src="assets/img/icons/certificate.png" width="55"
+              alt="certifications">
+          </a>
+        </div> -->
+        <div>
+          <a href="#modal-full" target="_blank" uk-toggle>
+            <img uk-tooltip="title:skills;pos:top" src="assets/img/icons/skills.png" width="55"
+              alt="FullStack Web Developer Certificate">
+          </a>
+        </div>
+        <div>
+          <a routerLink="assets/files/resume.pdf" target="_blank">
+            <img uk-tooltip="title:resume;pos:top" src="assets/img/icons/cv.png" width="55"
+              alt="FullStack Web Developer Certificate">
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div id="modal-full" class="uk-modal-full" uk-modal>
+  <div class="uk-modal-dialog">
+    <button class="uk-modal-close-full uk-close-large" type="button" uk-close></button>
+    <div uk-height-viewport
+      class="uk-background-primary uk-text-center uk-flex uk-flex-center uk-flex-middle uk-flex-column">
+      <h1>skills</h1>
+      <h3 style="color:#eee;margin:15px 0 40px 0;">
+        selection of relevant technologies that I have experience with
+      </h3>
+      <div class="uk-container">
+        <div class="uk-grid-small uk-child-width-1-5@s uk-flex-center uk-text-center uk-grid-match" uk-grid>
+          <div *ngFor="let skill of skills">
+            <div class="uk-card uk-card-small uk-card-secondary uk-card-body">
+              <img src="{{ skill.src }}" width="40" alt="">
+              <p class="uk-margin-small-top uk-text-capitalize">{{ skill.name }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </div>
