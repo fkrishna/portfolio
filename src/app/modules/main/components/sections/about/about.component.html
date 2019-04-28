@@ -12,23 +12,23 @@
       </p>
     </article>
 
-    <div class="uk-margin-large">
+    <div class="uk-margin-medium">
       <div class="uk-grid-larg uk-child-width-1-3@s uk-flex-center uk-text-center" uk-grid>
-        <!-- <div>
-          <a href="assets/others/cv" target="_blank">
-            <img uk-tooltip="title:certifications;pos:top" src="assets/img/icons/certificate.png" width="55"
+        <div>
+          <a href="#certifications-full" uk-toggle>
+            <img title="certifications" src="assets/img/icons/certificate.png" width="50"
               alt="certifications">
           </a>
-        </div> -->
+        </div>
         <div>
-          <a href="#modal-full" target="_blank" uk-toggle>
-            <img uk-tooltip="title:skills;pos:top" src="assets/img/icons/skills.png" width="55"
+          <a href="#modal-full" uk-toggle>
+            <img title="skills" src="assets/img/icons/skills.png" width="50"
               alt="FullStack Web Developer Certificate">
           </a>
         </div>
         <div>
           <a routerLink="assets/files/resume.pdf" target="_blank">
-            <img uk-tooltip="title:resume;pos:top" src="assets/img/icons/cv.png" width="55"
+            <img title="resume" src="assets/img/icons/cv.png" width="50"
               alt="FullStack Web Developer Certificate">
           </a>
         </div>
@@ -37,12 +37,11 @@
   </div>
 </div>
 
-
 <div id="modal-full" class="uk-modal-full" uk-modal>
   <div class="uk-modal-dialog">
-    <button class="uk-modal-close-full uk-close-large" type="button" uk-close></button>
+    <button class="uk-modal-close-full uk-close-large uk-background-primary" type="button" uk-close></button>
     <div uk-height-viewport
-      class="uk-background-primary uk-text-center uk-flex uk-flex-center uk-flex-middle uk-flex-column">
+      class="uk-background-primary uk-text-center uk-padding">
       <h1>skills</h1>
       <h3 style="color:#eee;margin:15px 0 40px 0;">
         selection of relevant technologies that I have experience with
@@ -53,6 +52,29 @@
             <div class="uk-card uk-card-small uk-card-secondary uk-card-body">
               <img src="{{ skill.src }}" width="40" alt="">
               <p class="uk-margin-small-top uk-text-capitalize">{{ skill.name }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="certifications-full" class="uk-modal-full" uk-modal>
+  <div class="uk-modal-dialog">
+    <button class="uk-modal-close-full uk-close-large uk-background-primary" type="button" uk-close></button>
+    <div uk-height-viewport
+      class="uk-background-primary uk-text-center uk-flex uk-flex-center uk-flex-middle uk-flex-column">
+      <h1 style="color:#fff;">my certificates</h1>
+      <div class="uk-container uk-margin">
+        <div class="uk-grid-small uk-child-width-1-2@s uk-flex-center uk-text-center uk-grid-match" uk-grid>
+          <div *ngFor="let certificate of certificates">
+            <div class="uk-card uk-card-body">
+              <img src="{{ certificate.logo }}" width="180" alt="{{ certificate.desc }}">
+              <p class="uk-margin-small-top uk-text-capitalize">
+                <a routerLink="{{certificate.src}}" class="uk-link-reset" style="color:#BDBDBD !important;"
+                  target="_blank">{{ certificate.desc }}</a>
+              </p>
             </div>
           </div>
         </div>
