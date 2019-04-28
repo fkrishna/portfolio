@@ -8,7 +8,7 @@ import { ProjectsService } from '@app/modules/lab/services/projects.service';
 })
 export class ProjectListComponent implements OnInit {
 
-  constructor(projectsServices:ProjectsService) { }
+  constructor(public projectsServices:ProjectsService) { }
 
   ngOnInit() {
   }
