@@ -20,7 +20,7 @@ export class ServicesComponent implements OnInit {
     },
     {
       name: 'mobile development',
-      content: 'Simple is Beautiful, when it comes to mobile applications I like to keep things simple, while carefully including the finest details and interactions',
+      content: 'I create hybrid app for Android and IOS that contains a web view and use a native app wrapper that can communicate with the native device platform',
       icon: 'icon:phone; ratio:2.8',
     },
   ]
