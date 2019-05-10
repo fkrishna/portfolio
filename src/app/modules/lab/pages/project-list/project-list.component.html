@@ -5,11 +5,12 @@
         uk-box-shadow-small uk-border-rounded" [style.background-color]="project.color"
         style="border:1px solid #ddd;">
         <h3 class="uk-card-title">
-          <a [href]="project.url" class="uk-link-reset uk-text-capitalize">{{ project.name }}</a>
+          <a [href]="project.url" class="uk-link-reset uk-text-capitalize" style="font-weight:600">{{ project.name }}</a>
         </h3>
         <p>
           {{ project.desc }}
         </p>
+        <!-- <a href="#" class="uk-link-reset" uk-icon="icon:github;ratio:1.4"></a> -->
       </div>
     </div>
   </div>

@@ -8,3 +8,5 @@ h1 { color: $c-secondary; @include font-size(40px); }
     color: #757575;
     @include font-size(16px);
 }
+
+.uk-card-footer { border-top: 1px solid #ccc; }
